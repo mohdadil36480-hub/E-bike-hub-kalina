@@ -1,0 +1,284 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | E-Bike Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>E-Bike Hub</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Product.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="product-page">
+
+    <h2>⚡ Our Electric Bikes</h2>
+
+    <p>
+        Welcome to E-Bike Hub. Explore our latest collection of
+        premium electric bikes with powerful motors, long battery life,
+        affordable prices and reliable service support.
+    </p>
+
+</section>
+
+<section class="search-box">
+    <input type="text" id="searchBox" placeholder="🔍 Search Your Bike"   onkeyup="searchBike()">
+</section>  
+
+<section class="filter-section">
+
+    <label><b>Filter By:</b></label>
+
+    <select id="filter" onchange="filterBike()">
+        <option value="all">All Bikes</option>
+        <option value="budget">Under ₹90,000</option>
+        <option value="premium">Above ₹90,000</option>
+    </select>
+
+</section>
+
+<section class="products">
+
+    <div class="product-card budget">
+        <img src="images/img-20231028-wa0030-500x500.webp" alt="Bijlee">
+        <h3>Bijlee</h3>
+        <p class="price">₹82,000</p>
+
+        <ul>
+            <li>🔋 Battery : 60V 30Ah Lithium-Ion</li>
+            <li>⚡ Motor : 1200W BLDC</li>
+            <li>📍 Range : 60 km</li>
+            <li>🚀 Top Speed : 35 km/h</li>
+        </ul> 
+        <button onclick="showDetails('Bijlee')">View Details</button>
+
+       <button onclick="buyNow('Bijlee')">Buy Now</button>
+         
+    </div>
+
+   <div class="product-card premium">
+        <img src="images/vajra-battery-operated-scooter-1000x1000.webp" alt="Vajra">
+        <h3>Vajra</h3>
+        <p class="price">₹95,000</p>
+
+        <ul>
+            <li>🔋 Battery : 60V 50Ah Lithium-Ion</li>
+            <li>⚡ Motor : 1200W BLDC</li>
+            <li>📍 Range : 100 km</li>
+            <li>🚀 Top Speed : 35 km/h</li>
+        </ul> 
+
+        <button onclick="showDetails('Vajra')">View Details</button>
+         <button onclick="buyNow('Vajra')">Buy Now</button>
+        
+    </div>
+
+    <div class="product-card premium">
+        <img src="images/trio max 3 viller.webp" alt="Trio Max">
+        <h3>Trio Max</h3>
+        <p class="price">₹1,20,000</p>
+
+        <ul>
+            <li>🔋 Battery : 60V 50Ah Lithium-Ion</li>
+            <li>⚡ Motor : 1200W BLDC</li>
+            <li>📍 Range : 100 km</li>
+            <li>🚀 Top Speed : 35 km/h</li>
+        </ul>  
+        <button onclick="showDetails('Trio Max')">View Details</button>
+
+        <button onclick="buyNow('Trio Max')">Buy Now</button>
+    </div>
+     
+</section>
+
+
+<section class="product-features">
+
+    <div class="feature-box">
+        <h3>🔋 Long Battery Life</h3>
+        <p>Up to 100 km on a single charge.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>⚡ Fast Charging</h3>
+        <p>Fully charge in just 4–5 hours.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>🛠 Service Support</h3>
+        <p>Professional service and genuine spare parts.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>🛡 2 Years Warranty</h3>
+        <p>Battery and motor warranty for peace of mind.</p>
+    </div>
+
+</section>  
+
+
+
+<section class="cta-product">
+    <h2>Ready to Ride Electric?</h2>
+    <p>Book your free test ride today and experience the future of mobility.</p>
+
+    <a href="contact.html">
+        <button>Book Test Ride</button>
+    </a>
+</section>  
+
+<section class="reviews">
+
+    <h2>⭐⭐ Customer Reviews</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Excellent quality and amazing battery backup. Highly recommended!"</p>
+            <h4>- Rahul Sharma</h4>
+        </div>
+
+        <div class="review-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Very smooth ride and excellent service support."</p>
+            <h4>- Imran Khan</h4>
+        </div>
+
+        <div class="review-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Best electric bike showroom in Mumbai. Staff is very helpful."</p>
+            <h4>- Aman Verma</h4>
+        </div>
+
+    </div>
+
+</section>  
+
+<section class="warranty">
+
+    <h2>🛡 Warranty & Service</h2>
+
+    <div class="warranty-container">
+
+        <div class="warranty-card">
+            <h3>🔋 Battery Warranty</h3>
+            <p>2 Years Warranty on Lithium-Ion Battery.</p>
+        </div>
+
+        <div class="warranty-card">
+            <h3>⚙ Motor Warranty</h3>
+            <p>1 Year Warranty on BLDC Motor.</p>
+        </div>
+
+        <div class="warranty-card">
+            <h3>🛠 Free Services</h3>
+            <p>3 Free Services during the first year.</p>
+        </div>
+
+        <div class="warranty-card">
+            <h3>📞 Customer Support</h3>
+            <p>Call us anytime for service and spare parts.</p>
+        </div>
+
+    </div>
+
+</section>  
+
+<section class="product-faq">
+
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>🔋 How long does the battery last?</h3>
+        <p>Our lithium-ion batteries provide up to 100 km range on a full charge.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>⚡ How much time does it take to charge?</h3>
+        <p>It takes approximately 4–5 hours for a full charge.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>🛡 Is there any warranty?</h3>
+        <p>Yes, we provide a 2-year battery warranty and a 1-year motor warranty.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>🛠 Do you provide service?</h3>
+        <p>Yes, we provide professional service support and genuine spare parts.</p>
+    </div>
+
+</section>  
+
+<section class="related-products">
+
+    <h2>🚲 You May Also Like</h2>
+
+    <div class="related-container">
+
+        <div class="related-card">
+            <img src="images/1 loader.webp" alt="Electric Loader">
+            <h3>Electric Loader</h3>
+            <p>₹85,000</p>
+            <button onclick="buyNow('Electric Loader')">Buy Now</button>
+        </div>
+
+        <div class="related-card">
+            <img src="images/2 loader.webp" alt="Cargo E-Bike">
+            <h3>Cargo E-Bike</h3>
+            <p>₹90,000</p>
+            <button onclick="buyNow('Cargo E-Bike')">Buy Now</button>
+        </div>
+
+        <div class="related-card">
+            <img src="images/3 loader.jpg" alt="Delivery E-Bike">
+            <h3>Delivery E-Bike</h3>
+            <p>₹1,25,000</p>
+            <button onclick="buyNow('Delivery E-Bike')">Buy Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <h3>E-Bike Hub</h3>
+    <p>Ride the Future with Smart Electric Bikes.</p>
+    <p>📞 +91 8956888421</p>
+    <p>📧 info@ebikehub.com</p>
+    <p>© 2026 E-Bike Hub | All Rights Reserved</p>
+</footer>  
+
+<div id="popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2 id="bikeTitle"></h2>
+
+        <p id="bikeInfo"></p>
+
+        <button onclick="closePopup()">Close</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```

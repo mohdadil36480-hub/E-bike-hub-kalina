@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+<header>
+    <h1>Welcome To E-Bike-Hub</h1>
+   
+    
+    
+    <nav>
+        <a href="index.html">home</a>
+        <a href="Product.html">products</a>
+        <a href="contact.html">contact</a> 
+         <a href="about.html">About</a>
+          <a href="services.html">Services</a> 
+          <a href="privacy.html">privacy</a>
+          <a href="terms.html">terms</a>
+        <a href="#">test,ride</a> 
+    </nav>
+</header>
+<!-- Hero -->
+ <section class="hero">
+    <h2>Welcome to E-Bike Hub</h2>
+    <p>Best Electric Bikes in Mumbai ⚡</p>
+</section>
+
+<section class="slider">
+  <img id="sliderImage" src="images/1 loader.webp" alt="E-Bike">
+</section>
+
+
+
+
+<section class="cta">
+    <h1> <b>Ride Elictric ,save money</b></h1>
+    <p> Book your test ride today and experience the future of biking</p>
+    <button class="like-btn" onclick="likeBike(this)">🤍</button>
+   <button onclick="document.querySelector('.test-ride').scrollIntoView({behavior:'smooth'})">
+    Book Test Ride
+</button>
+</section>
+
+
+<section class="test-ride">
+    <h2>🚲 Book Your Free Test Ride</h2>
+
+
+    <form onsubmit="bookRide(event)"></form>
+
+
+
+
+    <form onsubmit="bookRide(event)">
+        <input type="text" id="name" placeholder="Enter Your Name"required >
+
+        <input type="tel" id="phone" placeholder="Enter Mobile Number"required >
+
+        <select id="bike">
+            <option>Choose Bike Model</option>
+            <option>Bijlee</option>
+            <option>Vajra</option>
+            <option>Trio Max</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Test Ride</button>
+    </form>
+</section>
+
+
+
+
+<section class="search">
+    <input type="text" 
+    placeholder="searchBike"
+    id="searchBox" onkeyup="searchBike()">
+
+</section>
+
+<a href="https://wa.me/918956888421?text=Hello%20E-Bike%20Hub,%20I%20want%20to%20know%20more%20about%20your%20electric%20bikes."
+   target="_blank"
+   class="whatsapp-btn">
+    💬 Chat on WhatsApp
+
+    <a href="tel:+918956888421" class="call-btn">
+    📞 Call Now
+</a>
+
+
+</a>
+<a href="https://wa.me/918956888421?text=Hello%20E-Bike%20Hub"
+   class="whatsapp-float"
+   target="_blank">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+</a>
+
+<section class="bikes">
+    <div class="bike-card">
+        <img src="images/img-20231028-wa0030-500x500.webp">
+        <h3>Bijle</h3>
+        <p>₹82,000</p>
+
+    <ul>
+        <li>Battery: 60V 30Ah Lithium-Ion</li>
+        <li>Motor: 1200W BLDC Motor</li>
+        <li>Range: 60 km/charge</li>
+        <li>Top Speed: 35 km/h</li>
+        <li>Charging Time: 4-5 Hours</li>
+    </ul>
+
+    <button class="like-btn" onclick="likeBike(this)">🤍</button>
+        <button onclick="buynow()">Buy Now</button>
+
+    </div>
+
+    <div class="bike-card">
+        <img src="images/vajra-battery-operated-scooter-1000x1000.webp">
+        <h3>vajra</h3>
+        <p>₹95,000</p>
+
+    <ul>
+        <li>Battery: 60V 50Ah Lithium-Ion</li>
+        <li>Motor: 1200W BLDC Motor</li>
+        <li>Range: 100 km/charge</li>
+        <li>Top Speed: 35 km/h</li>
+        <li>Charging Time: 4-5 Hours</li>
+    </ul>
+
+    <button class="like-btn" onclick="likeBike(this)">🤍</button>
+    <button onclick="buynow()">Buy Now</button>
+       
+
+    </div>
+
+    <div class="bike-card">
+        <img src="images/vajra 3 viller.jpg">
+        <h3>vajra</h3>
+        <p>₹125,000</p>
+
+    <ul>
+        <li>Battery: 60V 50Ah Lithium-Ion</li>
+        <li>Motor: 1200W BLDC Motor</li>
+        <li>Range: 100 km/charge</li>
+        <li>Top Speed: 35 km/h</li>
+        <li>Charging Time: 4-5 Hours</li>
+    </ul>
+    <button class="like-btn" onclick="likeBike(this)">🤍</button>
+    <button onclick="buynow()">Buy Now</button>
+       
+
+    </div>
+    <div class="bike-card">
+        <img src="images/trio max 3 viller.webp">
+        <h3>trio max</h3>
+        <p>₹120,000</p>
+
+    <ul>
+        <li>Battery: 60V 50Ah Lithium-Ion</li>
+        <li>Motor: 1200W BLDC Motor</li>
+        <li>Range: 100 km/charge</li>
+        <li>Top Speed: 35 km/h</li>
+        <li>Charging Time: 4-5 Hours</li>
+    </ul><button class="like-btn" onclick="likeBike(this)">🤍</button>
+    <button onclick="buynow()">Buy Now</button>
+       
+
+    </div>
+
+
+</section>
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-box">
+        <h3>🔋 What is the battery warranty?</h3>
+
+    <p>Our e-bike batteries come with a 2-year warranty against manufacturing defects</p>
+    </div>
+    <div class="faq-box">
+        <h3>🛡️ Is there a warranty on the bike?</h3>
+        <p>Yes, every E-Bike Hub model includes a 1-year warranty on the motor and frame.</p>
+
+    </div>
+    <div class="faq-box">
+        <h3>⚡ How long does it take to charge?</h3>
+        <p>Most e-bikes take 4–5 hours for a full charge.</p>
+
+    </div>
+    <div class="faq-box">
+        <h3>🚲 What is the riding range?</h3>
+        <p>Depending on the model, you can ride approximately 80-100 km on a full charge.</p>
+    </div>
+    <div class="faq-box">
+        <h3>🛠️ Do you provide free service?</h3>
+        <p>Yes, we offer 3 free services within the first year of purchase.</p>
+
+    </div>
+
+</section>
+<section class="gallery">
+    <h2>Our Gallery</h2>
+    <p>Explore our latest collection of electric bikes.</p>
+    <div class="gallery-container">
+          <img src="images/1 loader.webp" alt="Electric Bike 1">
+        <img src="images/2 loader.webp" alt="Electric Bike 2">
+        <img src="images/3 loader.jpg" alt="Electric Bike 3">
+        <img src="images/4 loader.webp" alt="Electric Bike 4">
+        <img src="images/5 loader.jpg" alt="Electric Bike 5">
+        <img src="images/6 loader.jpg" alt="Electric Bike 6">
+        <img src="images/Three-Wheeler-Electric-Loader.jpg"alt= "Elictric Bike 7">
+
+    </div>
+
+</section>
+<H2>Our Video</H2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rHVyELardlY?si=aS-EC4MqEtgL1gcO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<section class="Parts-gallery">
+    <h2> our parts gallery</h2>
+    <p>Explore our latest collection of electric bikes.</p>
+    <div class="parts-gallery-container">
+        <img src="images/ALL ELCTRICK THORTAL.png"alt="parts 1">
+        <img src="images/Auto-Spare-Parts (1).jpg"alt="parts 2">
+        <img src="images/CALEVER.webp"alt="parts 3">
+        <img src="images/CONECTOR 2.webp"alt="parts 3">
+        <img src="images/CONECTOR.webp"alt="parts 4">
+        <img src="images/DISPLAY TO.webp"alt="parts 5">
+        <img src="images/DISPLAY.webp"alt="parts 6">
+        <img src="images/GERBOX DEFRENCEL.webp"alt="parts 7">
+        <img src="images/KEY.webp"alt="parts 8">
+        <img src="images/MOTOR ..jpg"alt="parts 9">
+        <img src="images/MOTOR IN SIDE.webp"alt="parts 10">
+        <img src="images/MOUNT..webp"alt="parts 11">
+        <img src="images/NCV.webp"alt="parts 12">
+        <img src="images/optinal.png"alt="parts 13">
+        <img src="images/SHOKAP.webp"alt="parts 14">
+        <img src="images/THORTAL IMAGES.webp"alt="parts 15">
+
+
+    </div>
+
+</section>
+
+
+<section class="services">
+    <h2>🔧 Our Services</h2>
+    <p>Professional Electric Bike Service & Maintenance</p>
+
+    <img src="images/service image.png" alt="E-Bike Hub Services">
+</section>
+
+
+
+
+<section class="why-us">
+    <h2>Why Chose E-Bike Hub?</h2>
+       <div class="features">
+    <div class="feature">
+        <h3 >⚡ Fast Charging</h3>
+        <p>Charge your bike quickly and get back on the road.</p>
+
+    </div>
+    <div class="feature">
+        <h3>Long battErYlife </h3>
+        <p>High-quality lithium batteries with long range.</p>
+    </div>
+    <div class="feature">
+        <h3>🛠 Service Support</h3>
+        <p>Professional servicing and maintenance support.</p>
+    </div>
+</div>
+</section>
+<section class="About">
+    <h2>About E-Bike Hub</h2>
+    <p> Welcome to E-Bike Hub. We provide the latest electric bikes
+        with modern features, affordable prices, and reliable service.
+        Our goal is to make eco-friendly transportation available for everyone.</p>
+</section>
+
+<section class="reviews">
+    <h2> Customer Reviews</h2>
+    <div class="reviews-container">
+        <div class="reviw-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Excellent bike! Battery backup is amazing."</p>
+             <h4>Rahul</h4>
+        </div>
+        <div class="reviw-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Very smooth ride and affordable price."</p>
+            <h4>malvin</h4>
+
+        </div>
+        <div class="reviw-card">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>"Best electric bike showroom in Mumbai."</p>
+            
+            <h4>Aman</h4>
+
+        </div>
+
+    </div>
+
+
+</section>
+<section class="contact">
+    <h2>Contact us</h2>
+    <form class="contact-form">
+        <input type="text"placeholder="Enter Your Name"required>
+            <input type="email"placeholder="Enter Your Email"required>
+             <textarea placeholder="Write Your Message" rows="6" required></textarea>
+             <button class="like-btn" onclick="likeBike(this)">🤍</button>
+             <button type="submit">Send Messege</button>
+    </form>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>E-Bike Hub</h3>
+            <p>
+                Ride the Future with Smart Electric Bikes.
+                Premium electric bikes, service, and genuine spare parts.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <a href="index.html">🏠 Home</a>
+            <a href="Product.html">🚲 Products</a>
+            <a href="about.html">ℹ️ About</a>
+            <a href="services.html">🛠 Services</a>
+            <a href="contact.html">📞 Contact</a>
+            <a href="privacy.html">🔒 Privacy Policy</a>
+            <a href="terms.html">📄 Terms & Conditions</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Info</h3>
+
+            <p>📍 Kalina Church Road, Santacruz East, Mumbai</p>
+            <p>📞 +91 8956888421</p>
+            <p>📧 info@ebikehub.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <a href="#">📘 Facebook</a>
+            <a href="#">📷 Instagram</a>
+            <a href="#">▶️ YouTube</a>
+            <a href="#">💼 LinkedIn</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 E-Bike Hub | All Rights Reserved.
+    </p>
+
+</footer>
+```
+
+
+
+
+
+
+<div class="address">
+    <h3>📍 Our Address</h3>
+    <H4>Location</H4>
+    <p>
+        E-Bike Hub<br>
+        Shop No. 06, kalina,Charch Road<br>
+        Mumbai, Maharashtra - 400001<br>
+        India
+    </p>
+    <p>8956888421</p>
+    <p>🕒 Mon - Sun: 9:00 AM - 8:00 PM</p>
+</div>
+<section class="map">
+    <h2>Our Location</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.643398926283!2d72.86802759999999!3d19.079410100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a92e99c13399%3A0xb0d055a4bb04dc0d!2sE-Bike%20Hub!5e0!3m2!1sen!2sin!4v1781873737585!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
+</section>
+
+<button id="scrollBtn">↑</button>
+
+<script src="script.js"></script>
+    
+ 
+website banwane k liye -contact karo...9598695633
+</body>
+</html>
